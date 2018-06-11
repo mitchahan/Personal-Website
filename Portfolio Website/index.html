@@ -4,36 +4,52 @@
   <title>Mitch Hansen</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/flav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/flav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/flav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/flav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/flav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/flav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/flav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/flav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/flav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/flav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/flav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/flav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/flav/favicon-16x16.png">
+    <link rel="manifest" href="img/flav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script type="text/javascript">
+      $(window).on('scroll', function() {
+        if ($(window).scrollTop()) {
+          $('nav').addClass('black');
+        } else {
+          $('nav').removeClass('black');
+        }
+      })
+    </script>
+
+
 </head>
 
 <body>
-  <nav class="nav-main">
+  <div class="wrapper">
+    <nav>
+      <div class="logo"><a href="#">MITCH HANSEN</a></div>
       <ul>
-        <li>
-          <a href="#" class="nav-item">MENU</a>
-            <div class="nav-content">
-              <div class="nav-sub">
-                <ul>
-                  <li>
-                    <a href="#about-section" class="nav-item">About</a>
-                  </li>
-                  <li>
-                    <a href="#programming-skills-section" class="nav-item">Programming Skills</a>
-                  </li>
-                  <li>
-                    <a href="#projects-section" class="nav-item">Projects</a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-item">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          <a href="#nav" class="nav-name">MITCH HANSEN</a>
-        </li>
+        <li><a href="#about-sec">About</a></li>
+        <li><a href="#prog">Programming</a></li>
+        <li><a href="#proj">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      </div>
-  </nav>
+
+    </nav>
 
   <div class="main-body">
     <div class="about-me">
@@ -42,46 +58,77 @@
         <h3 class="degree">Computer Science Undergraduate</h3>
         <h5 class="school">Santa Clara University</h5>
       </div>
+      <a id="about-sec"> </a>
     </div>
 
     <div class="text-center" style="margin:20px">
 
     </div>
-
     <!--<h1 style="text-align: center;">ABOUT</h1>-->
     <div class="about">
-      <a id="about-section"> </a>
         <img src="img/profile-pic.jpeg" width="200" class="profile-pic" style="float: left">
-        <p class="para1">Lorem ipsum dolor sit amet, nibh quas malorum nec eu, vix quodsi aperiam ut. Id sea prima exerci dignissim, pri et tempor salutandi concludaturque, iisque evertitur democritum cu has. Id insolens phaedrum tincidunt sit. Eu oratio commune necessitatibus eum. Ex quo everti apeirian, eum assum definitionem te. Ea mea saperet liberavisse, cu possit cetero vituperatoribus est. An vix tantas invidunt, in unum denique voluptatum vix, quo cu partiendo splendide.</p>
+        <a id="prog"></a>
+        <p class="para1">Welcome to my website. I am a Seattle native, currently attending Santa Clara University in the Silicon Valley as a rising sophomore computer science undergraduate. Over the past couple years, I have gained an extensive knowledge of C++ and Java, Object-Oriented Programming and Data Structures, as well as developed numerous related projects, just like this website! I fell in love with computer science and just couldn’t get enough, so I am always looking for a new project to dive into.</p>
     </div>
 
-    <div class="programming-skills" style="padding-top: 10px; padding-bottom: 100px" >
+    <div class="programming-skills"  >
         <div class="prog-background">
-          <a id="programming-skills-section"> </a>
-          <h1 style="text-align: center;">PROGRAMMING SKILLS</h1>
+          <h1 style="text-align: center; padding-bottom: 50px; letter-spacing: 15px;" >PROGRAMMING SKILLS</h1>
         </div>
-        <p class="para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium. Cras sit amet eros laoreet, pharetra velit in, pellentesque tellus. Etiam lobortis sollicitudin ex nec aliquam. Fusce in tincidunt ligula. In lacinia aliquam lacinia. Quisque vehicula finibus tincidunt. Duis interdum feugiat lorem, id lacinia lorem efficitur eu. Sed commodo rutrum felis, nec aliquam sem facilisis ac. Donec sit amet pretium ipsum, eu aliquet risus. Ut eu viverra lorem. Suspendisse potenti. Pellentesque a volutpat neque. Praesent scelerisque vulputate sem non pulvinar. Praesent ultricies felis consectetur, aliquet nulla ut, finibus nisl. Donec vel suscipit diam. Pellentesque consectetur ante dolor. Donec iaculis ullamcorper urna, sed rutrum neque porttitor non. Phasellus risus arcu, laoreet id tellus volutpat, dapibus rhoncus mauris. Duis libero diam, porttitor at nibh sit amet, consectetur lobortis est. Sed semper, sapien eleifend consequat dictum, turpis justo sodales diam, in tincidunt dui mi et tortor. Fusce nec congue massa. Vestibulum ut finibus tortor. Mauris ut libero sit amet est egestas commodo eget et nisi. Sed elementum, odio sed facilisis luctus, nunc elit dignissim odio, sed aliquam urna massa sit amet dolor. Etiam mollis consequat metus, et molestie ante lacinia ac. Etiam rhoncus libero vel pharetra ornare. Aliquam in sem ut ante porttitor aliquet. In semper neque vel placerat bibendum.
-        </p>
-        <p class="para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium. Cras sit amet eros laoreet, pharetra velit in, pellentesque tellus. Etiam lobortis sollicitudin ex nec aliquam. Fusce in tincidunt ligula. In lacinia aliquam lacinia. Quisque vehicula finibus tincidunt. Duis interdum feugiat lorem, id lacinia lorem efficitur eu. Sed commodo rutrum felis, nec aliquam sem facilisis ac. Donec sit amet pretium ipsum, eu aliquet risus. Ut eu viverra lorem. Suspendisse potenti. Pellentesque a volutpat neque. Praesent scelerisque vulputate sem non pulvinar. Praesent ultricies felis consectetur, aliquet nulla ut, finibus nisl. Donec vel suscipit diam. Pellentesque consectetur ante dolor. Donec iaculis ullamcorper urna, sed rutrum neque porttitor non. Phasellus risus arcu, laoreet id tellus volutpat, dapibus rhoncus mauris. Duis libero diam, porttitor at nibh sit amet, consectetur lobortis est. Sed semper, sapien eleifend consequat dictum, turpis justo sodales diam, in tincidunt dui mi et tortor. Fusce nec congue massa. Vestibulum ut finibus tortor. Mauris ut libero sit amet est egestas commodo eget et nisi. Sed elementum, odio sed facilisis luctus, nunc elit dignissim odio, sed aliquam urna massa sit amet dolor. Etiam mollis consequat metus, et molestie ante lacinia ac. Etiam rhoncus libero vel pharetra ornare. Aliquam in sem ut ante porttitor aliquet. In semper neque vel placerat bibendum.
-        </p>
+        <div class="row">
+          <div class="column">
+            <h2 style="text-align: center;">C++ & Java</h2>
+            <p class="para-prog">I have two years’ experience in Java and C++, building countless applications and programs to solve diverse tasks. Using object-oriented programming and data structures.</p>
+          </div>
+
+          <div class="column">
+            <h2 style="text-align: center;">Object-Oriented Programming & Data Structures</h2>
+            <p class="para-prog"> Whether that be implementing my own queue, stack, linked-list, or dynamic array to work with any data type, or comparing the efficiency and runtimes of numerous sorting algorithms and data structures to use the best one for any given situation. I can do it.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <h2 style="text-align: center;">C# & Python</h2>
+            <p class="para-prog"> To try something new I decided to dive into some light python and C#. Creating Discord bots and writing a roguelike console game to learn these new languages.</p>
+          </div>
+
+          <div class="column">
+            <h2 style="text-align: center;">Web Development</h2>
+            <p class="para-prog">This very website before you is an example of the web development skills I posses using HTML, CSS, and a touch of JavaScript.</p>
+          </div>
+        </div>
+        <a id="proj"></a>
     </div>
 
     <div class="projects" id="project-section">
-      <h1 style="text-align: center;">PROJECTS</h1>
-      <a id="project-section"> </a>
-      <p class="para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium. Cras sit amet eros laoreet, pharetra velit in, pellentesque tellus. Etiam lobortis sollicitudin ex nec aliquam. Fusce in tincidunt ligula. In lacinia aliquam lacinia. Quisque vehicula finibus tincidunt. Duis interdum feugiat lorem, id lacinia lorem efficitur eu. Sed commodo rutrum felis, nec aliquam sem facilisis ac. Donec sit amet pretium ipsum, eu aliquet risus. Ut eu viverra lorem. Suspendisse potenti. Pellentesque a volutpat neque. Praesent scelerisque vulputate sem non pulvinar. Praesent ultricies felis consectetur, aliquet nulla ut, finibus nisl. Donec vel suscipit diam. Pellentesque consectetur ante dolor. Donec iaculis ullamcorper urna, sed rutrum neque porttitor non. Phasellus risus arcu, laoreet id tellus volutpat, dapibus rhoncus mauris. Duis libero diam, porttitor at nibh sit amet, consectetur lobortis est. Sed semper, sapien eleifend consequat dictum, turpis justo sodales diam, in tincidunt dui mi et tortor. Fusce nec congue massa. Vestibulum ut finibus tortor. Mauris ut libero sit amet est egestas commodo eget et nisi. Sed elementum, odio sed facilisis luctus, nunc elit dignissim odio, sed aliquam urna massa sit amet dolor. Etiam mollis consequat metus, et molestie ante lacinia ac. Etiam rhoncus libero vel pharetra ornare. Aliquam in sem ut ante porttitor aliquet. In semper neque vel placerat bibendum.
-      </p>
-      <p class="para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium. Cras sit amet eros laoreet, pharetra velit in, pellentesque tellus. Etiam lobortis sollicitudin ex nec aliquam. Fusce in tincidunt ligula. In lacinia aliquam lacinia. Quisque vehicula finibus tincidunt. Duis interdum feugiat lorem, id lacinia lorem efficitur eu. Sed commodo rutrum felis, nec aliquam sem facilisis ac. Donec sit amet pretium ipsum, eu aliquet risus. Ut eu viverra lorem. Suspendisse potenti. Pellentesque a volutpat neque. Praesent scelerisque vulputate sem non pulvinar. Praesent ultricies felis consectetur, aliquet nulla ut, finibus nisl. Donec vel suscipit diam. Pellentesque consectetur ante dolor. Donec iaculis ullamcorper urna, sed rutrum neque porttitor non. Phasellus risus arcu, laoreet id tellus volutpat, dapibus rhoncus mauris. Duis libero diam, porttitor at nibh sit amet, consectetur lobortis est. Sed semper, sapien eleifend consequat dictum, turpis justo sodales diam, in tincidunt dui mi et tortor. Fusce nec congue massa. Vestibulum ut finibus tortor. Mauris ut libero sit amet est egestas commodo eget et nisi. Sed elementum, odio sed facilisis luctus, nunc elit dignissim odio, sed aliquam urna massa sit amet dolor. Etiam mollis consequat metus, et molestie ante lacinia ac. Etiam rhoncus libero vel pharetra ornare. Aliquam in sem ut ante porttitor aliquet. In semper neque vel placerat bibendum.
-      </p>
-      <p class="para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium. Cras sit amet eros laoreet, pharetra velit in, pellentesque tellus. Etiam lobortis sollicitudin ex nec aliquam. Fusce in tincidunt ligula. In lacinia aliquam lacinia. Quisque vehicula finibus tincidunt. Duis interdum feugiat lorem, id lacinia lorem efficitur eu. Sed commodo rutrum felis, nec aliquam sem facilisis ac. Donec sit amet pretium ipsum, eu aliquet risus. Ut eu viverra lorem. Suspendisse potenti. Pellentesque a volutpat neque. Praesent scelerisque vulputate sem non pulvinar. Praesent ultricies felis consectetur, aliquet nulla ut, finibus nisl. Donec vel suscipit diam. Pellentesque consectetur ante dolor. Donec iaculis ullamcorper urna, sed rutrum neque porttitor non. Phasellus risus arcu, laoreet id tellus volutpat, dapibus rhoncus mauris. Duis libero diam, porttitor at nibh sit amet, consectetur lobortis est. Sed semper, sapien eleifend consequat dictum, turpis justo sodales diam, in tincidunt dui mi et tortor. Fusce nec congue massa. Vestibulum ut finibus tortor. Mauris ut libero sit amet est egestas commodo eget et nisi. Sed elementum, odio sed facilisis luctus, nunc elit dignissim odio, sed aliquam urna massa sit amet dolor. Etiam mollis consequat metus, et molestie ante lacinia ac. Etiam rhoncus libero vel pharetra ornare. Aliquam in sem ut ante porttitor aliquet. In semper neque vel placerat bibendum.
-      </p>
-      <p class="para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium. Cras sit amet eros laoreet, pharetra velit in, pellentesque tellus. Etiam lobortis sollicitudin ex nec aliquam. Fusce in tincidunt ligula. In lacinia aliquam lacinia. Quisque vehicula finibus tincidunt. Duis interdum feugiat lorem, id lacinia lorem efficitur eu. Sed commodo rutrum felis, nec aliquam sem facilisis ac. Donec sit amet pretium ipsum, eu aliquet risus. Ut eu viverra lorem. Suspendisse potenti. Pellentesque a volutpat neque. Praesent scelerisque vulputate sem non pulvinar. Praesent ultricies felis consectetur, aliquet nulla ut, finibus nisl. Donec vel suscipit diam. Pellentesque consectetur ante dolor. Donec iaculis ullamcorper urna, sed rutrum neque porttitor non. Phasellus risus arcu, laoreet id tellus volutpat, dapibus rhoncus mauris. Duis libero diam, porttitor at nibh sit amet, consectetur lobortis est. Sed semper, sapien eleifend consequat dictum, turpis justo sodales diam, in tincidunt dui mi et tortor. Fusce nec congue massa. Vestibulum ut finibus tortor. Mauris ut libero sit amet est egestas commodo eget et nisi. Sed elementum, odio sed facilisis luctus, nunc elit dignissim odio, sed aliquam urna massa sit amet dolor. Etiam mollis consequat metus, et molestie ante lacinia ac. Etiam rhoncus libero vel pharetra ornare. Aliquam in sem ut ante porttitor aliquet. In semper neque vel placerat bibendum.
-      </p>
-      <p class="para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium. Cras sit amet eros laoreet, pharetra velit in, pellentesque tellus. Etiam lobortis sollicitudin ex nec aliquam. Fusce in tincidunt ligula. In lacinia aliquam lacinia. Quisque vehicula finibus tincidunt. Duis interdum feugiat lorem, id lacinia lorem efficitur eu. Sed commodo rutrum felis, nec aliquam sem facilisis ac. Donec sit amet pretium ipsum, eu aliquet risus. Ut eu viverra lorem. Suspendisse potenti. Pellentesque a volutpat neque. Praesent scelerisque vulputate sem non pulvinar. Praesent ultricies felis consectetur, aliquet nulla ut, finibus nisl. Donec vel suscipit diam. Pellentesque consectetur ante dolor. Donec iaculis ullamcorper urna, sed rutrum neque porttitor non. Phasellus risus arcu, laoreet id tellus volutpat, dapibus rhoncus mauris. Duis libero diam, porttitor at nibh sit amet, consectetur lobortis est. Sed semper, sapien eleifend consequat dictum, turpis justo sodales diam, in tincidunt dui mi et tortor. Fusce nec congue massa. Vestibulum ut finibus tortor. Mauris ut libero sit amet est egestas commodo eget et nisi. Sed elementum, odio sed facilisis luctus, nunc elit dignissim odio, sed aliquam urna massa sit amet dolor. Etiam mollis consequat metus, et molestie ante lacinia ac. Etiam rhoncus libero vel pharetra ornare. Aliquam in sem ut ante porttitor aliquet. In semper neque vel placerat bibendum.
-      </p>
+      <h1 style="text-align: center; letter-spacing: 15px;">PROJECTS</h1>
+      <div class="row">
+        <div class="column">
+          <h2 style="text-align: center;">C# RogueLike Game</h2>
+          <p class="para-prog"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium.</p>
+        </div>
+
+        <div class="column">
+          <h2 style="text-align: center;">Discord Bot & Chrome Extension</h2>
+          <p class="para-prog"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper in enim eu sodales. Morbi in mi pharetra ipsum mollis pretium.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact" style="text-align: center;">
+      <h1 style="text-align: center; letter-spacing: 15px;" id="contact">CONTACT</h1>
+      <a href="https://www.facebook.com/mitchames99" rel="noopener noreferrer" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/mitch_ames" rel="noopener noreferrer" target="_blank" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/mitch_ames/" rel="noopener noreferrer" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/mitchahan/" rel="noopener noreferrer" target="_blank" class="fa fa-linkedin"></a>
+      <a href="https://github.com/mitchahan" rel="noopener noreferrer" target="_blank" class="fa fa-github"></a>
+      <p class="contact-p"> Email me for inquiries, projects, or other random stuff! <p>
+      <p class="contact-p"> mitchames@live.com <p>
     </div>
 
   </div>
+
 
 </body>
 </html>
