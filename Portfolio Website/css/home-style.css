@@ -1,16 +1,16 @@
-body, html {
+body, html { /*Whole doc styling*/
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
-.logo {
+.logo { /*Actually this is just my name, space it to look all clean and nice*/
   line-height: 60px;
   position: fixed;
   float: left;
   margin: 16px 46px;
 }
 
-.logo a {
+.logo a { /*make the anchor links look good too*/
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 2px;
@@ -18,13 +18,13 @@ body, html {
   font-weight: bold;
 }
 
-nav {
+nav { /*navbar styling*/
   position: fixed;
   width: 100%;
   line-height: 60px;
 }
 
-nav ul {
+nav ul { /*navbar styling*/
   line-height: 60px;
   list-style: none;
   background: rgba(0, 0, 0, 0);
@@ -37,31 +37,31 @@ nav ul {
   transition: 1s;
 }
 
-nav.black ul {
+nav.black ul { /*navbar styling*/
   background: #23272a;
 }
 
-nav ul li {
+nav ul li { /*navbar styling*/
   display: inline-block;
   padding: 16px 40px;;
 }
 
-nav ul li a {
+nav ul li a { /*navbar styling*/
   text-decoration: none;
   color: #fff;
   font-size: 16px;
 }
 
-.main-body {
+.main-body { /*quick rundown section that's in front of background image*/
   text-align: left;
   background-color: #f2f2f2;
 }
 
-.name {
+.name { /*styling of my name, like logo*/
   letter-spacing: 15px;
 }
 
-.main-body .about {
+.main-body .about { /*styling of about section with photo and short desc.*/
   background-color: #f2f2f2;
   display: flex;
   align-items:center;
@@ -73,32 +73,32 @@ nav ul li a {
   color: #000;
 }
 
-.para {
+.para { /*simple paragraph styling*/
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.main-body .profile-pic {
+.main-body .profile-pic { /*round out profile picture and make it look nice*/
   border-radius: 50%;
   display: block;
   vertical-align: middle;
 }
 
-.main-body .para1 {
+.main-body .para1 { /*simple paragraph styling*/
   padding-left: 30px;
   padding-right:30px;
   /*padding-bottom: 20px;*/
   display: inline;
 }
 
-.main-body .para-prog {
+.main-body .para-prog { /*simple paragraph styling*/
   text-align: center;
   padding-left: 20px;
   padding-right:20px;
   /*display: inline;*/
 }
 
-.main-body .about-me {
+.main-body .about-me { /*about section styling/background forest photo*/
   padding-top: 400px;
   padding-bottom: 200px;
   width: 100%;
@@ -111,26 +111,26 @@ nav ul li a {
   background-color: #23272a;
 }
 
-.main-body .about-me .about-text {
+.main-body .about-me .about-text { /*simple text styling in about*/
   text-align: center;
   color: #fff;
 }
 
-.main-body .about-me .about-text .name {
+.main-body .about-me .about-text .name { /*simple text styling in about*/
   margin-bottom: 0;
 }
 
-.main-body .about-me .about-text .degree {
+.main-body .about-me .about-text .degree { /*simple text styling in about*/
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-.main-body .about-me .about-text .school {
+.main-body .about-me .about-text .school { /*simple text styling in about*/
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.main-body .programming-skills {
+.main-body .programming-skills { /*set up the programming skills section*/
   align-items: center;
   color: #fff;
   background-color: #23272a;
@@ -140,23 +140,23 @@ nav ul li a {
   padding-bottom: 50px;
 }
 
-.main-body .programming-skills .prog-background {
+.main-body .programming-skills .prog-background { /*make bckgrnd diff from other sections for taste*/
   /*align-items: center;*/
   color: #fff;
   background-color: #23272a;
 }
 
-.row {
+.row { /*handles 4x4 text sections/projects look*/
     display: flex;
     padding-bottom: 25px;
 }
 
-.column {
+.column { /*handles 4x4 text sections/projects look*/
     flex: 50%;
     padding-right: 100px;
 }
 
-.main-body .projects {
+.main-body .projects { /*project section styling*/
   background-color: #f2f2f2;
   align-items: center;
   padding-left: 300px;
@@ -165,7 +165,7 @@ nav ul li a {
   padding-bottom: 50px;
 }
 
-.main-body .contact {
+.main-body .contact { /*contact section styling*/
   align-items: center;
   color: #fff;
   background-color: #23272a;
@@ -175,7 +175,7 @@ nav ul li a {
   padding-bottom: 5px;
 }
 
-.fa {
+.fa { /*flavicons styling*/
   border-radius: 50%;
   display: block;
   vertical-align: middle;
@@ -187,31 +187,31 @@ nav ul li a {
   margin: 20px 32px;
 }
 
-.fa:hover {
+.fa:hover { /*flavicons styling*/
     opacity: 0.7;
 }
 
-.fa-facebook {
+.fa-facebook { /*flavicons styling for facebook*/
   background: #3B5998;
   color: white;
 }
 
-.fa-twitter {
+.fa-twitter {  /*flavicons styling for twitter*/
   background: #55ACEE;
   color: white;
 }
 
-.fa-linkedin {
+.fa-linkedin { /*flavicons styling for linkedin*/
   background: #007bb5;
   color: white;
 }
 
-.fa-stack-overflow {
+.fa-stack-overflow {  /*flavicons styling for stack overflow*/
   background: #125688;
   color: white;
 }
 
-.fa-github {
+.fa-github {  /*flavicons styling for github*/
   background: #333;
   color: white;
 }
