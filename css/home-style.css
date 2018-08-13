@@ -242,6 +242,7 @@ nav ul li a { /*navbar styling*/
     width: 100%;
     padding: 0;
   }
+
   .logo {
     position: relative;
     align-items: center;
@@ -278,5 +279,49 @@ nav ul li a { /*navbar styling*/
     text-align: center;
     padding-right: 15px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 633px) {
+
+  .burger-nav {
+    display: flex;
+    height: 100px;
+    width: 15%;
+    background: url("../img/burger.png") no-repeat 98% center;
+    float: right;
+  }
+
+  nav ul {
+    overflow: hidden;
+    background: #505050;
+    height: 0;
+  }
+
+  nav ul.open {
+    height: auto;
+  }
+
+  nav ul li {
+    text-align: left;
+    display: list-item;
+    padding: 0 10px;
+  }
+
+  nav ul li a {
+    border-bottom: 1px solid #404040;
+    display: block;
+  }
+
+  .logo {
+    width: 85%;
+  }
+
+  .row {
+    display: inline-block;
+  }
+
+  .column {
+    padding-bottom: 20px;
   }
 }
