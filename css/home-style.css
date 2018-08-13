@@ -16,18 +16,26 @@ h2 {
   line-height: 60px;
   position: fixed;
   float: left;
-  margin: 16px 46px;
+  padding: 25px 46px;
+  padding-top: 0;
 }
 
 .logo a { /*make the anchor links look good too*/
+  text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.logo a h1 { /*make the anchor links look good too*/
   letter-spacing: 2px;
   color: #fff;
   font-weight: bold;
 }
 
 nav { /*navbar styling*/
+  z-index: 9;
   position: fixed;
   width: 100%;
   line-height: 60px;
@@ -39,13 +47,13 @@ nav ul { /*navbar styling*/
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
   padding: 0;
-  text-align: right;
+  float: right;
   margin: 0;
   padding-right: 40px;
   transition: 1s;
 }
 
-nav.black ul { /*navbar styling*/
+nav.black { /*navbar styling*/
   background: #23272a;
 }
 
@@ -71,12 +79,7 @@ nav ul li a { /*navbar styling*/
 
 .main-body .about { /*styling of about section with photo and short desc.*/
   display: flex;
-  align-items:center;
-  text-align: left;
-  padding-left: 400px;
-  padding-right: 400px;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 50px;
   color: #000;
 }
 
@@ -86,15 +89,23 @@ nav ul li a { /*navbar styling*/
   float: left;
 }
 
-.main-body .profile-pic { /*round out profile picture and make it look nice*/
+.main-body .about img { /*round out profile picture and make it look nice*/
   border-radius: 50%;
-  display: block;
+  height: 200px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
 }
 
-.main-body .para1 { /*simple paragraph styling*/
-  padding-left: 30px;
-  padding-right:30px;
-  display: inline;
+.main-body .about .profile-pic {
+  width: 50%;
+}
+.main-body .about .profile-desc {
+  float: left;
+  padding-left: 15px;
+  padding-right: 200px;
+  width: 50%;
 }
 
 .main-body .para-prog { /*simple paragraph styling*/
@@ -139,28 +150,24 @@ nav ul li a { /*navbar styling*/
   align-items: center;
   color: #fff;
   background-color: #23272a;
-  padding-left: 300px;
-  padding-right: 300px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 100%;
+  padding: 40px 0;
 }
 
 .row { /*handles 4x4 text sections/projects look*/
     display: flex;
     padding-bottom: 25px;
+    padding: 0 80px;
 }
 
 .column { /*handles 4x4 text sections/projects look*/
     flex: 50%;
-    padding-right: 100px;
 }
 
 .main-body .projects { /*project section styling*/
   align-items: center;
-  padding-left: 300px;
-  padding-right: 300px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 100%;
+  padding: 40px 0;
 }
 
 .main-body .contact { /*contact section styling*/
@@ -168,8 +175,7 @@ nav ul li a { /*navbar styling*/
   text-align: center;
   color: #fff;
   background-color: #23272a;
-  padding-left: 300px;
-  padding-right: 300px;
+  width: 100%;
   padding-top: 25px;
   padding-bottom: 5px;
 }
@@ -221,4 +227,56 @@ nav ul li a { /*navbar styling*/
 
 .contact-p { /*contact paragraph styling*/
   align-items: center;
+}
+
+
+
+
+/*------------------------ Media Queries -------------------------*/
+
+@media screen and (max-width: 925px) {
+
+  nav ul {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  .logo {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 0 0;
+  }
+  .logo a {
+    text-align: center;
+  }
+
+  nav ul li { /*navbar styling*/
+    display: inline-block;
+    padding: 0 40px;;
+  }
+
+  .main-body .about {
+    display: inline-block;
+  }
+
+  .main-body .about .profile-pic {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main-body .about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(0);
+    float: none;
+  }
+
+  .main-body .about .profile-desc {
+    text-align: center;
+    padding-right: 15px;
+    width: 100%;
+  }
 }
