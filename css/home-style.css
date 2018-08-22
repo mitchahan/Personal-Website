@@ -79,7 +79,7 @@ nav ul li a { /*navbar styling*/
 
 .main-body .about { /*styling of about section with photo and short desc.*/
   display: flex;
-  padding: 50px;
+  padding: 180px 50px;
   color: #000;
 }
 
@@ -151,13 +151,13 @@ nav ul li a { /*navbar styling*/
   color: #fff;
   background-color: #23272a;
   width: 100%;
-  padding: 40px 0;
+  padding: 160px 0;
 }
 
 .row { /*handles 4x4 text sections/projects look*/
     display: flex;
     padding-bottom: 25px;
-    padding: 0 80px;
+    padding: 0 140px;
 }
 
 .column { /*handles 4x4 text sections/projects look*/
@@ -167,7 +167,7 @@ nav ul li a { /*navbar styling*/
 .main-body .projects { /*project section styling*/
   align-items: center;
   width: 100%;
-  padding: 40px 0;
+  padding: 160px 0;
 }
 
 .main-body .contact { /*contact section styling*/
@@ -176,7 +176,7 @@ nav ul li a { /*navbar styling*/
   color: #fff;
   background-color: #23272a;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 40px;
   padding-bottom: 5px;
 }
 
@@ -234,13 +234,17 @@ nav ul li a { /*navbar styling*/
 
 /*------------------------ Media Queries -------------------------*/
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 985px) {
 
   nav ul {
     float: none;
     text-align: center;
     width: 100%;
     padding: 0;
+  }
+
+  .row {
+    padding: 0 20px;
   }
 
   .logo {
@@ -278,12 +282,16 @@ nav ul li a { /*navbar styling*/
   .main-body .about .profile-desc {
     text-align: center;
     padding-right: 15px;
+    padding-left: 0;
     width: 100%;
   }
 }
 
-@media screen and (max-width: 633px) {
-
+@media screen and (max-width: 755px) {
+    h1 {
+      text-align: center;
+      letter-spacing: 10px;
+    }
   .burger-nav {
     display: flex;
     height: 100px;
