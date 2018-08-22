@@ -1,6 +1,7 @@
 body, html { /*Whole doc styling*/
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
 }
 
 h1 {
@@ -287,16 +288,25 @@ nav ul li a { /*navbar styling*/
   }
 }
 
+.about-me h1 {
+  letter-spacing: 5px;
+}
+
+.main-body .about-me {
+  padding-top: 200px;
+}
+
 @media screen and (max-width: 755px) {
     h1 {
       text-align: center;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
     }
   .burger-nav {
     display: flex;
     height: 100px;
-    width: 15%;
-    background: url("../img/burger.png") no-repeat 98% center;
+    width: 10%;
+    padding-right: 10px;
+    background: url("../img/burger.png") no-repeat center;
     float: right;
   }
 
