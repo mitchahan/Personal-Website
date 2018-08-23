@@ -230,7 +230,9 @@ nav ul li a { /*navbar styling*/
   align-items: center;
 }
 
-
+.about-me h1 {
+  letter-spacing: 5px;
+}
 
 
 /*------------------------ Media Queries -------------------------*/
@@ -286,21 +288,18 @@ nav ul li a { /*navbar styling*/
     padding-left: 0;
     width: 100%;
   }
-}
 
-.about-me h1 {
-  letter-spacing: 5px;
-}
-
-.main-body .about-me {
-  padding-top: 200px;
+  .main-body .about-me {
+    padding-top: 200px;
+  }
 }
 
 @media screen and (max-width: 755px) {
-    h1 {
-      text-align: center;
-      letter-spacing: 5px;
-    }
+  h1 {
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
   .burger-nav {
     display: flex;
     height: 100px;
@@ -341,5 +340,10 @@ nav ul li a { /*navbar styling*/
 
   .column {
     padding-bottom: 20px;
+  }
+
+  .main-body .about-me {
+    font-size: 75%;
+    letter-spacing: 5px;
   }
 }
