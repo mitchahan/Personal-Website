@@ -36,7 +36,7 @@
         <ul>
           <li><a href="#about-sec">About</a></li>
           <li><a href="#prog">Programming</a></li>
-          <li><a href="#proj">Projects</a></li>
+          <li><a href="#project-section">Projects</a></li>
           <li><a href="#contact-header">Contact</a></li>
           <li><a href="./pdf/Hansen Mitchell Resume Color.pdf" target="blank_">R&eacute;sum&eacute;</a></li>
         </ul>
@@ -54,37 +54,25 @@
         <div class="about">
           <div class="profile-pic"> <img src="img/profile-pic.jpeg"> </div>
           <div class="profile-desc"> <p class="para1">Welcome to my website. I am a Seattle native, currently attending Santa Clara University in the Silicon Valley as a rising sophomore and computer science undergraduate. Over the past couple years, I have gained an extensive knowledge of C++ and Java, Object-Oriented Programming and Data Structures, as well as developed numerous related projects, just like this website! I fell in love with computer science and just couldn’t get enough, so I am always looking for a new project to dive into or a new concept to explore.</p> </div>
-          <a id="prog"></a>
         </div>
 
-        <div class="programming-skills">
+        <div id="prog" class="programming-skills">
           <div class="prog-background">
             <h1>PROGRAMMING SKILLS</h1>
           </div>
-          <div class="row">
-            <div class="column">
-              <h2>C++ & Java</h2>
-              <p class="para-prog">I have two years’ experience in Java and C++, building programs to solve diverse tasks.</p>
+          <div class="terminal space shadow">
+            <div class="top">
+                <div class="btns">
+                    <span class="circle red"></span>
+                    <span class="circle grey"></span>
+                    <span class="circle grey"></span>
+                </div>
+                <div class="title">skills@mitch-hansen.com:~</div>
             </div>
-
-            <div class="column">
-              <h2>Object-Oriented Programming & Data Structures</h2>
-              <p class="para-prog">Through classes at school I have gained an extensive knowledge in various Data Structures and Object-Oriented programming techniques.</p>
-            </div>
+            <pre class="body"></br></br>skills@mitch-hansen.com:~$ g++ -std=c++11 skills.cpp</br></br>~$ Through school and developing my skills on my own time</br>~$ I hope to eventually become a computer master </br></br>~$ I know various languages:</br>    ~$ C++</br>    ~$ Java</br>    ~$ HTML</br>    ~$ CSS</br>    ~$ some JavaScript</br>    ~$ And some C#</br></br>~$ I also know various techniques and tools:</br>    ~$ Object Oriented Programming</br>    ~$ Data Structures and Algorithms</br>    ~$ Visual Studio</br>    ~$ Git</br>    ~$ Atom</br>    ~$ G++ Compiler</br></br>
+            </pre>
           </div>
-
-          <div class="row">
-            <div class="column">
-              <h2>C#, Python, & Other Languages</h2>
-              <p class="para-prog">I'm always trying to dabble in new languages to see what they're capable of.</p>
-            </div>
-
-            <div class="column">
-              <h2>Web Development</h2>
-              <p class="para-prog">This very website before you is an example of the web development skills I posses using HTML, CSS, and JavaScript. I also plan on developing websites for other friends.</p>
-            </div>
-          </div>
-          <a id="proj"></a>
+        </div>
         </div>
 
         <div class="projects" id="project-section">
@@ -92,27 +80,39 @@
           <div class="row">
             <div class="column">
               <h2>C# RogueLike Game</h2>
-              <p class="para-prog"> In order to learn a new language, I chose to learn C# through making a game. You can find my full C# game made through a tutorial on my github.</p>
-              <p class="para-prog"> <a href="https://github.com/mitchahan/Roguelike-Game-CSharp" rel="noopener noreferrer" target="_blank">The Repository</a> | <a href="https://roguesharp.wordpress.com/" rel="noopener noreferrer" target="_blank">RogueSharp Tutorial</a></p>
+              <p class="para-prog"> One day I got bored and thought, "hey, what could I do to improve my skills, yet at the same time have a ton of fun. I'm kinda blownout from all the data-structures." So I looked up some cool projects and came across some tutorials and one of the happened to be making a C# Rougelike game. It was fun, I got to learn C# a little better and create a little fun game in between doing Calculus and learning about Roman architecture. Why did so many emporers burn Rome to the ground?</p>
+              <p class="para-prog"> <a href="https://github.com/mitchahan/Roguelike-Game-CSharp" rel="noopener noreferrer" target="_blank">GitHub Repo</a> | <a href="https://roguesharp.wordpress.com/" rel="noopener noreferrer" target="_blank">RogueSharp Tutorial</a></p>
             </div>
 
             <div class="column">
-              <h2>Discord Bot</h2>
-              <p class="para-prog">To practice work with API's I created a Discord Bot using the Reddit and Discord API as well as a politcally charged Chrome Extension</p>
-              <p class="para-prog"> <a href="https://github.com/mitchahan/DiscordBots" rel="noopener noreferrer" target="_blank">Discord Bot</a> | <a href="https://github.com/mitchahan/Chrome-Extension-Donald-Replacer" rel="noopener noreferrer" target="_blank">Chrome Extension</a></p>
+              <h2>Pantry Location App Proof of Concept</h2>
+              <p class="para-prog"> So for my first Hackathon ever, a group of 5 others and myself created a "prototype" for a pantry/disaster relief location application utilizint the Google Map's API, Android Studio, and Git. It was extremly fun, I still hang with all the guys in my group to this day after meeting them there for the first time. Anyways, we programmed the entire thing in C++ cause we all knew it, but then found out the Maps API doesn't support C++... nice. So I had to go through all our old backend code and reprogram it into Java, because I was the only one who knew it enough. It put us back like 6 hours, but we at least got a prototype up and used dummy locations and data. 10/10 would recommend losing an entire weekends worth of sleep to code for 24 hours straight again.</p>
+              <p class="para-prog"> <a href="https://github.com/mitchahan/Hackathon" rel="noopener noreferrer" target="_blank">GitHub Repo</a> | <a href="http://hackforhumanity.io/" rel="noopener noreferrer" target="_blank">Hack For Humanity</a></p>
+            </div>
+
+            <div class="column">
+              <h2>Student to Business Web Application Database</h2>
+              <p class="para-prog">This project is a website that holds a database of businesses and their employees with their business emails and job title. Students with .edu email addresses would then sign up on the website and be able to search for business professionals then connecting with them. The .edu domain would extremely limit the amount of spam and bot users trying to harvest emails from our site, this is because the .edu domain is handled solely by Educase, and states that “Only US postsecondary institutions institutionally accredited by one of the agencies on the U.S. Department of Education's list of Nationally Recognized Accrediting Agencies may apply for new names in the .edu domain. These include both "Regional Institutional Accrediting Agencies" and "National Institutional and Specialized Accrediting Bodies" recognized by the U.S. Department of Education”, allowing the website to be more credible and enticing for businesses to use, theoretically. It's Currently in development by me and one of my good friends <a href="https://github.com/bdreyerr/" target="blank_">Ben Dreyer</a>.</p>
+              <p class="para-prog"> <a href="http://bizstalker.azurewebsites.net/" target="blank_">Visit Our Website</a></p>
+            </div>
+
+            <div class="column">
+              <h2>This Very Website</h2>
+              <p class="para-prog">This website is a proof of some of my Computer Science skills, and let me tell you... I thought it was going to be a lot easier. Nope, I've scrapped design after design, hours upon hours of minute details being tweaked, and I still see issues. Writing the skeleton is easy, it was getting it to look nice and capturing a theme of who I was that was hard. Either way I'm proud of what I accomplished here, and learned a lot throughout the journey of creating my first initial website. Thanks for even taking the time to look at it :)</p>
+              <p class="para-prog"> <a href="https://github.com/mitchahan/Personal-Website" target="blank_">GitHub Repo</a></p>
             </div>
           </div>
         </div>
 
         <div class="contact">
           <a href="#contact" id="contact-header"><h1>CONTACT</h1></a>
-          <a href="https://stackexchange.com/users/13408684/mitch-hansen" rel="noopener noreferrer" target="_blank" class="fa fa-stack-overflow"></a>
           <a href="https://www.linkedin.com/in/mitchahan/" rel="noopener noreferrer" target="_blank" class="fa fa-linkedin"></a>
           <a href="https://github.com/mitchahan" rel="noopener noreferrer" target="_blank" class="fa fa-github"></a>
           <a href="https://www.facebook.com/mitchames99" rel="noopener noreferrer" target="_blank" class="fa fa-facebook"></a>
           <a href="https://twitter.com/mitch_ames" rel="noopener noreferrer" target="_blank" class="fa fa-twitter"></a>
           <p class="contact-p">Email me for inquiries or other random stuff!<p>
           <p class="contact-p">mitchames@live.com <p>
+          <p class="contact-p">Grab a copy of my r&eacute;sum&eacute; here: <a href="./pdf/Hansen Mitchell Resume Color.pdf" target="blank_">R&eacute;sum&eacute;</a></p>
         </div>
 
       </div>
