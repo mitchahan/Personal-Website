@@ -367,6 +367,11 @@ nav ul li a { /*navbar styling*/
     letter-spacing: 5px;
   }
 
+  .logo a h1 {
+    float: left;
+    padding-left: 15px;
+  }
+
   .burger-nav {
     display: flex;
     height: 100px;
@@ -377,13 +382,10 @@ nav ul li a { /*navbar styling*/
   }
 
   nav ul {
+    display: none;
     overflow: hidden;
-    background: #505050;
-    height: 0;
-  }
-
-  nav ul.open {
-    height: auto;
+    background: #23272a;
+    /*height: 0;*/
   }
 
   nav ul li {
