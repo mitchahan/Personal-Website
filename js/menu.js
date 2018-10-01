@@ -1,9 +1,13 @@
 $(document).ready(function() {
   $(".burger-nav").on("click", function() {
-    $("nav ul").toggle();
+    if (screen.width < 960) {
+      $("nav ul").toggle();
+    }
   });
 
   $("nav ul li a").on("click", function() {
-    $("nav ul").toggle();
+    if (screen.width < 960) {
+      $("nav ul").toggle();
+    }
   });
 });
