@@ -56,7 +56,7 @@ nav ul { /*navbar styling*/
 }
 
 nav.black { /*navbar styling*/
-  background: #23272a;
+  background: #34333b;
 }
 
 nav ul li { /*navbar styling*/
@@ -106,18 +106,18 @@ nav ul li a { /*navbar styling*/
 .main-body .about .profile-desc {
   float: left;
   padding-left: 15px;
-  padding-right: 200px;
+  padding-right: 240px;
   width: 50%;
 }
 
 .para-prog { /*simple paragraph styling*/
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .projects {
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .main-body .about-me { /*about section styling/background forest photo*/
@@ -168,7 +168,7 @@ nav ul li a { /*navbar styling*/
 
 .column { /*handles 4x4 text sections/projects look*/
     flex: 50%;
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
     padding-top: 0;
 }
 
@@ -297,6 +297,12 @@ nav ul li a { /*navbar styling*/
   color: #fff;
 }
 
+.linebreak {
+    margin: 60px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
 
 /*------------------------ Media Queries -------------------------*/
 
@@ -423,5 +429,10 @@ nav ul li a { /*navbar styling*/
 
   .space {
       margin: 30px;
+  }
+
+  .para-prog {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
