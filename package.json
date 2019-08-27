@@ -1,0 +1,22 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchahan/Personal-Website.git"
+  },
+  "author": "Mitch Hansen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitchahan/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/mitchahan/Personal-Website#readme",
+  "dependencies": {
+    "react": "^16.9.0"
+  }
+}
